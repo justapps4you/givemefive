@@ -3,14 +3,13 @@ var tizenEvents = {
 
         var r = confirm("If you continue, you will lose all your progress in the game. Is it OK for you?");
         if(r === true){
-            //localStorage.clear();
             location.reload();
         }
     },
     exit: function () {
         var r = confirm("Do you want to exit?");
         if(r === true){
-            //tizen.application.getCurrentApplication().exit();
+            tizen.application.getCurrentApplication().exit();
         }
     },
     menuState: 'closed',
@@ -38,6 +37,13 @@ var tizenEvents = {
 
 //CREATING DOM ELEMENTS
 ///////////////////////
+
+//0. adding CSS
+var cssLink = document.createElement('link');
+cssLink.setAttribute('rel','stylesheet');
+cssLink.setAttribute('type','text/css');
+cssLink.setAttribute('href','tizen/tizen.css');
+document.body.appendChild(cssLink);
 
 //1. creating div exit menu
 var divExitMenu = document.createElement('div');

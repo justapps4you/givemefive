@@ -22,10 +22,6 @@ div.menu-button {
     top: 0;
     right: 0;
     border: 0;
-
-    border-width: 1px;
-    border-style: solid;
-    border-color: red;
 }
 
 div.headerButton {
@@ -65,7 +61,7 @@ div.menu-content > ul > li {
     height: 50px;
     text-align: center;
     line-height: 50px;
-    color: #7d7e7b;
+    color: black;
     list-style: none;
     font-weight: bold;
 }
